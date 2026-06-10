@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*******Diseño General***********/
+
+/*Este es el icono del menu hamburguesa para mobile*/
+.nav__close {
+  display: var(--show, none);
+}
+
+.arrow_right,
+.arrow_left {
+  width: 30px;
+}
+
+.footer__img {
+  width: 30px;
+}
