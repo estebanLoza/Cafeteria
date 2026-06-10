@@ -15,22 +15,123 @@
           <li class="nav__link nav__menu"><a href="">Nostros</a></li>
           <li class="nav__link nav__menu"><a href="">Contacto</a></li>
           <li class="nav__link nav__menu"><a href="">Servicios</a></li>
+          <!--Aquí va el close icon para cerrar el menu-->
         </ul>
+        <!--El menu icono va dentro del nav -->
+        <div class="nav-menu">
+          <img src="./images/menu.svg" alt="icon menu" class="nav__close">
+        </div>
       </nav>
-
-      <div class="nav-menu">
-        <img src="./images/menu.svg" alt="icon menu">
-      </div>
+      <section class="container nav-info">
+          <h1>ZERIOR</h1>
+          <h2>Coffee</h2>
+          
+          <p class="about_paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, corporis ex a dignissimos labore odit in          
+          </p>
+      </section>
     </header>
 
     <main>
       <!--Promociones-->
-      <section></section>
+      <section class="promocioens">
+          <div class="container promo_container">
+              <img src="./images/arrow_left.svg" alt="" class="arrow_left">
+              <!--Promocion 1-->
+              <section class="promo_body promo_body--show">
+                <div class="promo_coffe">
+                    <p class="promo_paragraph">Viernes 2x1 en lattes</p>
+                </div>
+              </section>
+              <!--Promocion 2-->
+              <section class="promo_body promo_body--show">
+                <div class="promo_coffe">
+                    <p class="promo_paragraph">Bienvenido el Matcha</p>
+                    <p class="promo_paragraph">Nueva bebida</p>
+                </div>
+              </section>
+              <!--Promocion 3-->
+              <section class="promo_body promo_body--show">
+                <div class="promo_coffe">
+                    <p class="promo_paragraph"></p>
+                </div>
+              </section>
+
+              <!--Promocion 4-->
+              <section class="promo_body promo_body--show">
+                <div class="promo_coffe">
+                    <p class="promo_paragraph">Viernes 2x1 en lattes</p>
+                </div>
+              </section>
+              <!--Flecha derecha -->
+              <img src="./images/arrow_right.svg" alt="" class="arrow_right">
+          </div>
+      </section>
       <!--Catalogo-->
-      <section></section>
+      <section class="menu">
+        <div class="menu_options">
+          <a href="#bebidas">Bebidas</a>
+          <a href="#panes">Pan</a>
+        </div>
+        
+        <div class="menu_body container">
+            <div id="bebidas">
+                  <ul>
+                    <li>Café Americano</li>
+                    <li>Espresso</li>
+                    <li>Latte</li>
+                    <li>Cappuccino</li>
+                    <li>Mocha</li>
+                    <li>Frappe</li>
+                    <li>Frappe Oreo</li>
+                    <li>Cold Brew</li>
+                    <li>Cold Brew Vainilla</li>
+                  </ul>
+            </div>
+
+
+            <div id="pan">
+                <ul>
+                  <li>Crepe</li>
+                  <li>Croissant</li>
+                  <li>Dona Chocolate</li>
+                  <li>Pay de Queso</li>
+                  <li>Pay de Limón</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+
+      <section class="nosotros">
+        <div class="nosotros_container">
+          <div class="nosotros_media">
+            <video width="320" height="240" autoplay muted loop>
+              <source src="./images/12778465_3840_2160_24fps.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="nosotros_info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, saepe esse! Ab tempore odit nemo sunt necessitatibus non fugiat omnis praesentium.
+          </div>
+        </div>
+      </section>
 
       <!--Ubicacion-->
-      <section></section>
+      <section class="ubicacion__contacto container">
+        <div>      
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.3416441797244!2d-100.31453272820639!3d25.669229127484265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be2befc8f705%3A0xd57f9d9407bf5722!2sMacroplaza!5e1!3m2!1ses-419!2smx!4v1781056446836!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+
+      </section>
     </main>
+
+    <!--Footer-->
+    <footer class="footer"> 
+      <section class="footer__copy container">
+        <div class="footer__social">
+          <a href="" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+          <a href="" class="footer__icons"><img src="./images/instagram.svg" class="footer__img"></a>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
