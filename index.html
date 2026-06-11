@@ -10,11 +10,11 @@
     <header class="container header">
       <nav class="menu-nav container-nav">
         <ul>
-          <li class="nav__link nav__menu"><a href="">Inicio</a></li>
-          <li class="nav__link nav__menu"><a href="">Menu</a></li>
-          <li class="nav__link nav__menu"><a href="">Nostros</a></li>
-          <li class="nav__link nav__menu"><a href="">Contacto</a></li>
-          <li class="nav__link nav__menu"><a href="">Servicios</a></li>
+          <li class="nav__link nav__menu"><a href="#">Inicio</a></li>
+          <li class="nav__link nav__menu"><a href="#menu">Menu</a></li>
+          <li class="nav__link nav__menu"><a href="#nosotros">Nostros</a></li>
+          <li class="nav__link nav__menu"><a href="#ubicacion">Contacto</a></li>
+          <li class="nav__link nav__menu"><a href="#servicios">Servicios</a></li>
           <!--Aquí va el close icon para cerrar el menu-->
         </ul>
         <!--El menu icono va dentro del nav -->
@@ -27,48 +27,57 @@
           <h2>Coffee</h2>
           
           <p class="about_paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, corporis ex a dignissimos labore odit in          
+            "La felicidad es un buen libro y una taza de café"    
           </p>
       </section>
     </header>
 
     <main>
       <!--Promociones-->
-      <section class="promocioens">
+      <section class="promociones">
           <div class="container promo_container">
-              <img src="./images/arrow_left.svg" alt="" class="arrow_left">
+              <img src="./images/arrow_left.svg" onclick="plusSlide(-1)" alt="" class="arrow_left">
               <!--Promocion 1-->
-              <section class="promo_body promo_body--show">
+              <section class="promo_body promo_body--show fade">
                 <div class="promo_coffe">
                     <p class="promo_paragraph">Viernes 2x1 en lattes</p>
                 </div>
               </section>
               <!--Promocion 2-->
-              <section class="promo_body promo_body--show">
-                <div class="promo_coffe">
-                    <p class="promo_paragraph">Bienvenido el Matcha</p>
-                    <p class="promo_paragraph">Nueva bebida</p>
+              <section class="promo_body promo_body--show fade">
+                <div class="promo_matcha">
+                    <h5 class="promoHeader">Bienvenido el Matcha</h5>
+                    <p class="promo_paragraph"> Nueva bebida de matcha</p>
                 </div>
               </section>
               <!--Promocion 3-->
-              <section class="promo_body promo_body--show">
-                <div class="promo_coffe">
-                    <p class="promo_paragraph"></p>
+              <section class="promo_body promo_body--show fade">
+                <div class="promo_shot">
+                    <p class="promo_paragraph">Agrega gratis tus shot en estas bebidas</p>
                 </div>
               </section>
 
               <!--Promocion 4-->
-              <section class="promo_body promo_body--show">
-                <div class="promo_coffe">
-                    <p class="promo_paragraph">Viernes 2x1 en lattes</p>
+              <section class="promo_body promo_body--show fade">
+                <div class="promo_cake">
+                    <p class="promo_paragraph">10% en todos los pasteles</p>
                 </div>
               </section>
+              <!--Dots-->
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+              </div>
+
               <!--Flecha derecha -->
-              <img src="./images/arrow_right.svg" alt="" class="arrow_right">
+              <img src="./images/arrow_right.svg" alt="" onclick="plusSlide(1)" class="arrow_right">
           </div>
       </section>
       <!--Catalogo-->
-      <section class="menu">
+      <section id="menu">
         <div class="menu_options">
           <a href="#bebidas">Bebidas</a>
           <a href="#panes">Pan</a>
@@ -102,7 +111,7 @@
         </div>
       </section>
 
-      <section class="nosotros">
+      <section id="nosotros">
         <div class="nosotros_container">
           <div class="nosotros_media">
             <video width="320" height="240" autoplay muted loop>
@@ -116,7 +125,7 @@
       </section>
 
       <!--Ubicacion-->
-      <section class="ubicacion__contacto container">
+      <section id='ubicacion' class="ubicacion__contacto container">
         <div>      
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.3416441797244!2d-100.31453272820639!3d25.669229127484265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be2befc8f705%3A0xd57f9d9407bf5722!2sMacroplaza!5e1!3m2!1ses-419!2smx!4v1781056446836!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
@@ -133,5 +142,8 @@
         </div>
       </section>
     </footer>
+
+    <script src="Js/slider_promo.js">
+    </script>
   </body>
 </html>
