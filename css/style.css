@@ -35,17 +35,15 @@
 
 .header {
   width: 100%;
-  min-height:400px;
+  min-height: 400px;
   max-height: 800px;
   height: 35rem;
-  background-image: linear-gradient(
-    rgba(0,0,0,0.6), 
-      rgba(0,0,0,0.6) 
-    ) ,
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
     url("../images/cafe-room1.jpg");
   background-position: center center;
   background-size: cover;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   display: grid;
   grid-template-rows: 200px 1fr;
 }
@@ -64,7 +62,7 @@
 }
 
 
-.menu-nav ul li a{
+.menu-nav ul li a {
   text-decoration: none;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 1.67em;
@@ -73,9 +71,9 @@
 }
 
 
-  /*Logo */
+/*Logo */
 
-.nav-info{
+.nav-info {
   width: 100%;
   display: flex;
   align-items: center;
@@ -83,24 +81,26 @@
 }
 
 
-.nav-info h1, .nav-info h2, .nav-info p {
+.nav-info h1,
+.nav-info h2,
+.nav-info p {
   color: #ffffff;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.nav-info h1{
+.nav-info h1 {
   font-size: 5rem;
   font-style: italic;
   font-family: 'Gloock', sans-serif;
   margin-bottom: 0.2em;
 }
 
-.nav-info h2{
+.nav-info h2 {
   font-size: 2.5rem;
   margin-bottom: 0.5em;
 }
 
-.nav-info p{
+.nav-info p {
   font-size: 2rem;
   font-style: italic;
 }
@@ -109,14 +109,14 @@
 
 /*Promociones*/
 
-.promociones{
-    /* border: 1px solid black; */
-    width: 100%;
-    height: 32.6em;
-    padding: 2em;
+.promociones {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 32.6em;
+  padding: 2em;
 }
 
-.promo_container{
+.promo_container {
   width: 100%;
   height: 100%;
   position: relative;
@@ -124,19 +124,17 @@
 }
 
 
-.promo_body{
+.promo_body {
   display: none;
   width: 100%;
   height: 100%;
-  
+
 }
 
 
-.promo_coffe{
-  background-image: linear-gradient(
-    rgba(0,0,0,0.6), 
-      rgba(0,0,0,0.6) 
-    ) ,
+.promo_coffe {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
     url("../images/cafe1.jpg");
   width: 100%;
   height: 100%;
@@ -150,27 +148,23 @@
 
 
 
-.promo_matcha{
+.promo_matcha {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-    rgba(0,0,0,0.6), 
-      rgba(0,0,0,0.6) 
-    ) ,
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
     url("../images/matcha.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  position: relative;
 }
 
 
-.promo_shot{
-  background-image: linear-gradient(
-    rgba(0,0,0,0.6), 
-      rgba(0,0,0,0.6) 
-    ) ,
+.promo_shot {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
     url("../images/frappe.jpg");
   width: 100%;
   height: 100%;
@@ -180,30 +174,29 @@
   border-radius: 15px;
   position: relative;
 }
-.promo_cake{
-  background-image: linear-gradient(
-    rgba(0,0,0,0.6), 
-      rgba(0,0,0,0.6) 
-    ) ,
+
+.promo_cake {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
     url("../images/concha.jpg");
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    border-radius: 18px;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 18px;
+  position: relative;
 }
 
 
-.box_infopromo{
+.box_infopromo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.box_infopromo h5{
+.box_infopromo h5 {
   color: #ffffff;
   font-size: 2.5em;
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -211,16 +204,16 @@
   text-align: center;
 }
 
-.box_infopromo #paragraph_matcha{
-  text-align:center;
+.box_infopromo #paragraph_matcha {
+  text-align: center;
   color: #ffffff;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 1.7rem;
-} 
+}
 
-.box_infopromo .promo_paragraph{
+.box_infopromo .promo_paragraph {
   color: #ffffff;
-  text-align:center;
+  text-align: center;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 5em;
   font-weight: bold;
@@ -228,7 +221,8 @@
 
 
 
-.arrow_right, .arrow_left{
+.arrow_right,
+.arrow_left {
   position: absolute;
   cursor: pointer;
   top: 50%;
@@ -238,7 +232,7 @@
 }
 
 
-.arrow_right{
+.arrow_right {
   right: 0;
 }
 
@@ -254,15 +248,16 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover{
+.active,
+.dot:hover {
   background-color: red;
 }
 
 
 
-/*Animaciones a las fotos */ 
+/*Animaciones a las fotos */
 
-.fade{
+.fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -270,9 +265,14 @@
 
 
 
-@keyframes fade{
-  from {opacity: .4}
-  to {opacity: 1}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 
@@ -282,24 +282,49 @@
 #menu {
   width: 100%;
   display: grid;
-  grid-template-rows: 125px 1fr;
-  gap: 1em;
+  grid-template-rows: 150px 100px 1fr;
   padding: 0.3em;
 }
 
-
-#menu .menu_options{
-  
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em; 
+#menu h2 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-self: center;
+  font-size: 1em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  border: 1px solid red;
 }
 
 
+#menu .menu_options {
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8.2em;
+  border: 1px solid green;
+}
 
+.menu_options h2 {
+  text-align: center;
 
+}
 
+.menu_options a {
+  color: white;
+  background-color: orange;
+  border-radius: 8px;
+  padding: 0.5em;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5em;
+}
 
+/*Caja de la informacion de los productos*/
 
+.menu_body {
+  overflow: hidden;
+}
