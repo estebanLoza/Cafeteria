@@ -143,8 +143,11 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-
+  border-radius: 15px;
+  position: relative;
 }
+
+
 
 
 .promo_matcha{
@@ -158,6 +161,8 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 15px;
+    position: relative;
 }
 
 
@@ -172,8 +177,9 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 15px;
+  position: relative;
 }
-
 .promo_cake{
   background-image: linear-gradient(
     rgba(0,0,0,0.6), 
@@ -185,6 +191,39 @@
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
+    border-radius: 18px;
+    position: relative;
+}
+
+
+.box_infopromo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box_infopromo h5{
+  color: #ffffff;
+  font-size: 2.5em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.box_infopromo #paragraph_matcha{
+  text-align:center;
+  color: #ffffff;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.7rem;
+} 
+
+.box_infopromo .promo_paragraph{
+  color: #ffffff;
+  text-align:center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 5em;
+  font-weight: bold;
 }
 
 
