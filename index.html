@@ -86,72 +86,57 @@
           </div>
       </section>
       <!--Catalogo-->
-      <section id="menu">
-        <h2>MENÚ</h2>
-        <div class="menu_options">
-          <a href="#bebidas">Bebidas</a>
-          <a href="#panes">Pan</a>
+     <section id="menu">
+  <div class="headerBox">
+    <h2>MENÚ</h2>
+  </div>
+  
+  <div class="menu_options">
+    <a href="#bebidas" id="btn-bebidas">Bebidas</a>
+    <a href="#panes" id="btn-panes">Pan</a>
+  </div>
+  
+  <div class="menu_body container">
+    <div class="container_bebidas_pan">
+      <div class="filterDiv bebidas" data-img="./images/Menu/cafeAmericano.jpg">
+          <p>Café americano</p>
+      </div>
+      <div class="filterDiv bebidas" data-img="./images/Menu/espresso.jpg"
+        data-desc="Un tiro concentrado de café puro y robusto, ideal para despertar.">
+          <p>Espresso</p>
+      </div>
+      <div class="filterDiv bebidas" data-img="./images/Menu/latte.jpg">
+          <p>Latte</p>
+      </div>
+      <div class="filterDiv bebidas" data-img="./images/Menu/cappuccino.jpg">
+          <p>Cappuccino</p>
+      </div>
+
+      <div class="filterDiv pan" data-img="./images/Menu/crepe.jpg">
+          <p>Crepe</p>
+      </div>
+      <div class="filterDiv pan" data-img="./images/Menu/Croissant.jpg">
+          <p>Croissant</p>
+      </div>
+      <div class="filterDiv pan" data-img="./images/Menu/ChocolateDonut.jpg">
+          <p>Dona Chocolate</p>
+      </div>
+     </div>
+     
+     <div class="container_images_menu">
+        <div class="boxImages">
+            <img src="./images/cafe-room1.jpg" alt="Imagen del menú" id="imagen-destacada">
+            <p id="texto-destacado" class="desc-destacada">Pasa el cursor sobre un producto para ver sus detalles.</p>
         </div>
-        
-        <div class="menu_body container">
-            <div id="bebidas">
-                  <ul>
-                    <li id="cafeAmericano">Café Americano</li>
-                    <li id="espresso">Espresso</li>
-                    <li id="latte">Latte</li>
-                    <li id="cappuccino">Cappuccino</li>
-                    <li id="mocha">Mocha</li>
-                    <li id="frappe">Frappe</li>
-                    <li id="frappeOreo">Frappe Oreo</li>
-                    <li id="colBrew">Cold Brew</li> 
-                  </ul>
+    </div>
+  </div>
 
 
-            </div>
-          <!--Imagenes de las bebidas-->
-          <div class="box_imagesDrinks">
-            <!--El primer div muestra solo una imagen para indicar que son las bebdias. -->
-            <div class="boxImages">
-              <img src="" alt="">
-            </div>
-            <div class="boxImages"><img src="" alt=""></div>
-            <div class="boxImages"><img src="" alt=""></div>
-            <div class="boxImages"><img src="" alt=""></div>
-            <div class="boxImages"><img src="" alt=""></div>
-            <div class="boxImages"><img src="" alt=""></div>
-            <div class="boxImages"><img src="" alt=""></div>
-            <div class="boxImages"><img src="" alt=""></div>
-            <div class="boxImages"><img src="" alt=""></div>
-          </div>
 
-            <!--Menu pan --> 
-            <div id="pan">
-                <ul>
-                  <li>Crepe</li>
-                  <li>Croissant</li>
-                  <li>Dona Chocolate</li>
-                  <li>Pay de Queso</li>
-                  <li>Pay de Limón</li>
-                </ul>
-            </div>
 
-            
-            <div class="box_iamgesCakes">
-              <!--El primer div muestra solo una iamgen para indicar que son los pasteles -->
-              <div class="boxImages"><img src="" alt=""></div>
-              <div class="boxImages"><img src="" alt=""></div>
-              <div class="boxImages"><img src="" alt=""></div>
-              <div class="boxImages"><img src="" alt=""></div>
-              <div class="boxImages"><img src="" alt=""></div>
-              <div class="boxImages"><img src="" alt=""></div>
-              <div class="boxImages"><img src="" alt=""></div>
-              <div class="boxImages"><img src="" alt=""></div>
-              <div class="boxImages"><img src="" alt=""></div>
-            </div>
-        </div>
-      </section>
+</section>      
 
-      <section id="nosotros">
+<section id="nosotros">
         <div class="nosotros_container">
           <div class="nosotros_media">
             <video width="320" height="240" autoplay muted loop>
@@ -185,5 +170,7 @@
 
     <script src="Js/slider_promo.js">
     </script>
+    <script src="/Js/menu.js"></srcript>
+
   </body>
 </html>
