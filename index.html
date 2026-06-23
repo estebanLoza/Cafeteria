@@ -14,7 +14,9 @@
           <li class="nav__link nav__menu"><a href="#menu">Menu</a></li>
           <li class="nav__link nav__menu"><a href="#nosotros">Nostros</a></li>
           <li class="nav__link nav__menu"><a href="#ubicacion">Contacto</a></li>
-          <li class="nav__link nav__menu"><a href="#servicios">Servicios</a></li>
+          <li class="nav__link nav__menu">
+            <a href="#servicios">Servicios</a>
+          </li>
           <!--Aquí va el close icon para cerrar el menu-->
         </ul>
         <!--El menu icono va dentro del nav -->
@@ -23,154 +25,196 @@
         </div>
       </nav>
       <section class="container nav-info">
-          <h1>ZERIOR</h1>
-          <h2>Coffee</h2>
-          
-          <p class="about_paragraph">
-            "La felicidad es un buen libro y una taza de café"    
-          </p>
+        <h1>ZERIOR</h1>
+        <h2>Coffee</h2>
+
+        <p class="about_paragraph">
+          "La felicidad es un buen libro y una taza de café"
+        </p>
       </section>
     </header>
 
     <main>
       <!--Promociones-->
       <section class="promociones">
-          <div class="container promo_container">
-              <img src="./images/arrow_left.svg" onclick="plusSlide(-1)" alt="" class="arrow_left">
-              <!--Promocion 1-->
-              <section class="promo_body promo_body--show fade">
-                <div class="promo_coffe">
-                    <div class="box_infopromo">
-                      <p class="promo_paragraph">Viernes 2x1 en lattes</p>
-                    </div>  
-                </div>
-              </section>
-              <!--Promocion 2-->
-              <section class="promo_body promo_body--show fade">
-                <div class="promo_matcha">
-                  <div class="box_infopromo">
-                    <h5 class="promoHeader">Bienvenido el Matcha</h5>
-                    <p id='paragraph_matcha'> Nueva bebida de matcha</p>              
-                  </div> 
-                </div>
-              </section>
-              <!--Promocion 3-->
-              <section class="promo_body promo_body--show fade">
-                <div class="promo_shot">
-                    <div class="box_infopromo">
-                      <p class="promo_paragraph">Agrega gratis tus shot en estas bebidas</p>
-                    </div>
-                </div>
-              </section>
-
-              <!--Promocion 4-->
-              <section class="promo_body promo_body--show fade">
-                <div class="promo_cake">
-
+        <div class="container promo_container">
+          <img
+            src="./images/arrow_left.svg"
+            onclick="plusSlide(-1)"
+            alt=""
+            class="arrow_left">
+          <!--Promocion 1-->
+          <section class="promo_body promo_body--show fade">
+            <div class="promo_coffe">
               <div class="box_infopromo">
-                <p class="promo_paragraph">10% de Descuento <br> En todos los pasteles</p>
+                <p class="promo_paragraph">Viernes 2x1 en lattes</p>
               </div>
-                </div>
-              </section>
-              <!--Dots-->
-              
-              <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-                <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+          </section>
+          <!--Promocion 2-->
+          <section class="promo_body promo_body--show fade">
+            <div class="promo_matcha">
+              <div class="box_infopromo">
+                <h5 class="promoHeader">Bienvenido el Matcha</h5>
+                <p id="paragraph_matcha">Nueva bebida de matcha</p>
               </div>
+            </div>
+          </section>
+          <!--Promocion 3-->
+          <section class="promo_body promo_body--show fade">
+            <div class="promo_shot">
+              <div class="box_infopromo">
+                <p class="promo_paragraph">
+                  Agrega gratis tus shot en estas bebidas
+                </p>
+              </div>
+            </div>
+          </section>
 
-              <!--Flecha derecha -->
-              <img src="./images/arrow_right.svg" alt="" onclick="plusSlide(1)" class="arrow_right">
+          <!--Promocion 4-->
+          <section class="promo_body promo_body--show fade">
+            <div class="promo_cake">
+              <div class="box_infopromo">
+                <p class="promo_paragraph">
+                  10% de Descuento <br>
+                  En todos los pasteles
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--Dots-->
+
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
           </div>
+
+          <!--Flecha derecha -->
+          <img
+            src="./images/arrow_right.svg"
+            alt=""
+            onclick="plusSlide(1)"
+            class="arrow_right">
+        </div>
       </section>
       <!--Catalogo-->
-     <section id="menu">
-  <div class="headerBox">
-    <h2>MENÚ</h2>
-  </div>
-  
-  <div class="menu_options">
-    <a href="#bebidas" id="btn-bebidas">Bebidas</a>
-    <a href="#panes" id="btn-panes">Pan</a>
-  </div>
-  
-  <div class="menu_body container">
-    <div class="container_bebidas_pan">
-      <div class="filterDiv bebidas" data-img="./images/Menu/cafeAmericano.jpg">
-          <p>Café americano</p>
-      </div>
-      <div class="filterDiv bebidas" data-img="./images/Menu/espresso.jpg"
-        data-desc="Un tiro concentrado de café puro y robusto, ideal para despertar.">
-          <p>Espresso</p>
-      </div>
-      <div class="filterDiv bebidas" data-img="./images/Menu/latte.jpg">
-          <p>Latte</p>
-      </div>
-      <div class="filterDiv bebidas" data-img="./images/Menu/cappuccino.jpg">
-          <p>Cappuccino</p>
-      </div>
-
-      <div class="filterDiv pan" data-img="./images/Menu/crepe.jpg">
-          <p>Crepe</p>
-      </div>
-      <div class="filterDiv pan" data-img="./images/Menu/Croissant.jpg">
-          <p>Croissant</p>
-      </div>
-      <div class="filterDiv pan" data-img="./images/Menu/ChocolateDonut.jpg">
-          <p>Dona Chocolate</p>
-      </div>
-     </div>
-     
-     <div class="container_images_menu">
-        <div class="boxImages">
-            <img src="./images/cafe-room1.jpg" alt="Imagen del menú" id="imagen-destacada">
-            <p id="texto-destacado" class="desc-destacada">Pasa el cursor sobre un producto para ver sus detalles.</p>
+      <section id="menu">
+        <div class="headerBox">
+          <h2>MENÚ</h2>
         </div>
-    </div>
-  </div>
 
+        <div class="menu_options">
+          <a href="#bebidas" id="btn-bebidas">Bebidas</a>
+          <a href="#panes" id="btn-panes">Pan</a>
+        </div>
 
+        <div class="menu_body container">
+          <div class="container_bebidas_pan">
+            <div
+              class="filterDiv bebidas"
+              data-img="./images/Menu/cafeAmericano.jpg"
+            >
+              <p>Café americano</p>
+            </div>
+            <div
+              class="filterDiv bebidas"
+              data-img="./images/Menu/espresso.jpg"
+              data-desc="Un tiro concentrado de café puro y robusto, ideal para despertar."
+            >
+              <p>Espresso</p>
+            </div>
+            <div class="filterDiv bebidas" data-img="./images/Menu/latte.jpg">
+              <p>Latte</p>
+            </div>
+            <div
+              class="filterDiv bebidas"
+              data-img="./images/Menu/cappuccino.jpg"
+            >
+              <p>Cappuccino</p>
+            </div>
 
+            <div class="filterDiv pan" data-img="./images/Menu/crepe.jpg">
+              <p>Crepe</p>
+            </div>
+            <div class="filterDiv pan" data-img="./images/Menu/Croissant.jpg">
+              <p>Croissant</p>
+            </div>
+            <div
+              class="filterDiv pan"
+              data-img="./images/Menu/ChocolateDonut.jpg"
+            >
+              <p>Dona Chocolate</p>
+            </div>
+          </div>
 
-</section>      
-
-<section id="nosotros">
+          <div class="container_images_menu">
+            <div class="boxImages">
+              <img
+                src="./images/cafe-room1.jpg"
+                alt="Imagen del menú"
+                id="imagen-destacada">
+              <p id="texto-destacado" class="desc-destacada">
+                Pasa el cursor sobre un producto para ver sus detalles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Sección NOSOTROS --->
+      <section id="nosotros">
+        <div class="header_nosotros">
+          <h2>Nosotros</h2>
+        </div>
         <div class="nosotros_container">
           <div class="nosotros_media">
             <video width="320" height="240" autoplay muted loop>
-              <source src="./images/12778465_3840_2160_24fps.mp4" type="video/mp4">
+              <source
+                src="./images/12778465_3840_2160_24fps.mp4"
+                type="video/mp4">
             </video>
           </div>
           <div class="nosotros_info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, saepe esse! Ab tempore odit nemo sunt necessitatibus non fugiat omnis praesentium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <br>Impedit, saepe esse! <br>Ab tempore odit nemo sunt
+            necessitatibus non fugiat omnis praesentium.
           </div>
         </div>
       </section>
 
       <!--Ubicacion-->
-      <section id='ubicacion' class="ubicacion__contacto container">
-        <div>      
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.3416441797244!2d-100.31453272820639!3d25.669229127484265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be2befc8f705%3A0xd57f9d9407bf5722!2sMacroplaza!5e1!3m2!1ses-419!2smx!4v1781056446836!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-
+      <section id="ubicacion" class="ubicacion__contacto container">
+        <div class="ubicacion_header">
+          <h2>Ubicación</h2>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.3416441797244!2d-100.31453272820639!3d25.669229127484265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be2befc8f705%3A0xd57f9d9407bf5722!2sMacroplaza!5e1!3m2!1ses-419!2smx!4v1781056446836!5m2!1ses-419!2smx"
+          style="border: 0"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          id="ubicacion_map"
+        ></iframe>
       </section>
     </main>
 
-    <!--Footer-->
-    <footer class="footer"> 
+    <!-- Footer -->
+    <footer class="footer">
       <section class="footer__copy container">
         <div class="footer__social">
-          <a href="" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
-          <a href="" class="footer__icons"><img src="./images/instagram.svg" class="footer__img"></a>
+          <a href="" class="footer__icons">
+            <img src="./images/facebook.svg" class="footer__img">
+          </a>
+
+          <a href="" class="footer__icons">
+            <img src="./images/instagram.svg" class="footer__img">
+          </a>
         </div>
       </section>
     </footer>
 
-    <script src="Js/slider_promo.js">
-    </script>
-    <script src="/Js/menu.js"></srcript>
-
+    <script src="Js/slider_promo.js"></script>
+    <script src="/Js/menu.js"></script>
   </body>
 </html>
